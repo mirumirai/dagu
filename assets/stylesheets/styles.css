@@ -6,6 +6,8 @@
   text-align: center;
 }
 
+/*Viewport Breakpoints*/
+
 @media only screen and (max-width: 1200px) {
     #googleMap {
         max-width: 940px;
