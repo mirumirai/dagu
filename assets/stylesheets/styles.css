@@ -2,6 +2,10 @@
   margin-top: 20px;
 }
 
+.panel-body {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1200px) {
     #googleMap {
         max-width: 940px;
@@ -10,6 +14,18 @@
 
 @media only screen and (max-width: 990px) {
     #googleMap {
-        max-width: 740px;
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #googleMap {
+        max-width: 595px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #googleMap {
+        max-width: 355px;
     }
 }
