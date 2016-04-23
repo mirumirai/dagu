@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DAGU</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+      function initialize() {
+        var mapProp = {
+          center:new google.maps.LatLng(8.680943,40.187909),
+          zoom:5,
+          mapTypeId:google.maps.MapTypeId.TERRAIN
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1>DAGU</h1>
+
+      <div id="googleMap" style="width:935px;height:300px;"></div>
+      <br />
+
+      <div class="row"> <!-- Row 1 -->
+
+        <div class="col-md-2">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <a href="https://worldview.earthdata.nasa.gov/?p=geographic&l=Land_Water_Map,MODIS_Water_Mask,Reference_Labels,Reference_Features&t=2016-04-23&v=26.40809599099959,1.419616120029369,50.45497099099959,15.499694245029369">Water</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-2">
+        </div>
+        
+        <div class="col-md-2">
+        </div>
+        
+        <div class="col-md-2">
+        </div>
+        
+        <div class="col-md-2">
+        </div>
+        
+        <div class="col-md-2">
+        </div>
+
+      </div> <!-- row 1 -->
+
+    </div> <!-- Container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
