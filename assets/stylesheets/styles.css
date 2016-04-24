@@ -32,16 +32,8 @@
     }
 }
 
-.mapRollover a {     
+.mapRollover{     
     display : block;
-    width : **px;
-    height : **px;
-    background-image:url("assets/images/Map.png" );
-}
-
-.mapRollover a:hover {
-    display : block;
-    width : **px;
-    height : **px;
-    background-image:url("assets/images/MapOverlay.jpg" ); 
+    width: 100%;
+    height: 100%;
 }
