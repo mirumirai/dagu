@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DAGU</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <!-- Google Map -->
+    <script>
+      function initialize() {
+        var mapProp = {
+          center:new google.maps.LatLng(8.680943,40.187909),
+          zoom:7,
+          mapTypeId:google.maps.MapTypeId.TERRAIN
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+        <div id="googleMap" style="width:1138px;height:300px;"></div>
+
+      <br />
+
+      <div class="row"> <!-- Row 1 -->
+
+        <div class="col-md-2">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <a href="assets/images/pastureConditions.jpg"><span><i class="fa fa-pagelines" aria-hidden="true"></i></span> Pasture Conditions</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <a href="#"><span><i class="fa fa-money" aria-hidden="true"></i></span> Market Prices</a>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- row 1 -->
+    </div> <!-- Container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
